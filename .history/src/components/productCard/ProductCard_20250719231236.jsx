@@ -43,7 +43,7 @@ function ProductCard() {
                             const { title, price, imageUrl, id } = item;
                             return (
                                 <div 
-                                onClick={() => navigate(`/productinfo/${id}`)} 
+                                onClick={() => navigate(`/productinfo/${id}`)}
                                 key={index} className="min-w-[250px] flex-shrink-0 drop-shadow-lg" >
                                     <div className="h-full border-2 hover:shadow-gray-100 hover:shadow-2xl transition-shadow duration-300 ease-in-out    border-gray-200 border-opacity-60 rounded-2xl overflow-hidden" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                         {/* IMAGE */}
