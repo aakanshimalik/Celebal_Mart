@@ -1,0 +1,13 @@
+import React from 'react';
+
+import Hero from "../../assets/1000156086.png";
+
+function HeroSection() {
+  return (
+    <div>
+        <img src={Hero} alt="img" className='w-full p-5' style={{ height: 'calc(100vh - 220px)'}} />
+    </div>
+  )
+}
+
+export default HeroSection;
