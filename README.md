@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# CELEBAL MART 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The name "Celebal Mart" was chosen to reflect both the organization behind the project (Celebal Technologies) and the nature of the platform (an online marketplace).
 
-## Available Scripts
+"Celebal" acknowledges the company that provided the internship opportunity and under which this project was developed and  "Mart" signifies a digital shopping experience — an online store offering a variety of products to users.
 
-In the project directory, you can run:
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Celebal Mart is an e-commerce web app built as an internship project for Celebal Technologies. It allows users to browse, purchase products, and manage orders, with admin features for product management—all powered by React and Firebase.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Customizable products view (List/Grid)
+- Product listings
+- Search & Filter products  functionality
+- Cart management
+- Checkout process
+- Payment gateway integration(Razorpay test mode)
+- Generation of downloadable PDF receipts after order payment
+- Seamless navigation and smooth user experience
+- User registration & secure sign-in
+- Password recovery
+- Automatically email receipts to registered users(via Emailjs)
+- Customizable AI generated Celebal product images and stored in Cloudinary.
+- Separate sections for Products page and Tech Store of Celebal(Not for sale, only showcase)
+- Add , Edit and Delete Product feature
+- Admin dashboard with analytics view (orders, users, stock, etc.)
+- Responsive design 
+- Wishlist or Like/Heart feature to mark favorite products
+- Toast notifications for real-time feedback (e.g., add to cart, login success)
+- Firestore-based product and order management
+- Error handling and form validations throughout the app
+- Dark mode support 
+- Social media links integration in product pages (Facebook, Twitter, Instagram)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Frontend: React.js, Redux
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Backend: Firebase (Firestore, Authentication)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Storage: Cloudinary (for AI-generated Celebal product images)
 
-### `npm run eject`
+- Email Service: EmailJS (for sending receipts to registered emails)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Payment Gateway: Razorpay (test mode)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Others: React Router (for routing), React Toastify (notifications)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshot 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9a8a1009-f821-4ab6-87dc-c5143628176b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3b14e1da-05ad-406b-9253-d907f0d2eed1" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### API Keys and Security
+For ease of review and to avoid setup issues, all API keys are currently included directly in the project. After the review period (10 days), these keys will be secured properly using environment variables or other best practices to ensure safety and confidentiality.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation 
 
-### Code Splitting
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/celebal-mart.git  
+2. Navigate to the project directory:
+   ```
+   cd celebal-mart
+3. Install dependencies:
+   ```
+   npm install
+4. All necessary API keys (Firebase, Cloudinary, EmailJS) are already configured within the project for easy setup and testing.
+5. Start the server:
+   ```
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
+- When you open the app, the Home page loads by default.
 
-### Analyzing the Bundle Size
+- The navigation bar contains links to different pages, along with your profile picture.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Clicking on the profile picture will redirect users to the Login/Signup page.
 
-### Making a Progressive Web App
+- After logging in:
+   - Browse and search for products.
+   - Add products to your cart.
+   - View and manage your cart items.
+   - Proceed to checkout and make payments via Razorpay in test mode.
+   - Download a PDF receipt after successful payment.
+   - Receive an email receipt automatically (powered by EmailJS).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Admin users (using the provided credentials) can access additional features such as:
 
-### Advanced Configuration
+   - Adding new products.
+   - Editing existing products.
+   - Deleting products from the catalog.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Payment Gateway: Razorpay is integrated in test mode. Use Razorpay test credentials for payment testing.
 
-### Deployment
+  ### Admin Credentials for Review:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+     Email: aakanshimalik54@gmail.com
 
-### `npm run build` fails to minify
+     Password: aakanshi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ### Razorpay Test Payment Credentials:
+
+     You can use any test card provided by Razorpay’s official docs (e.g., card number: 4111 1111 1111 1111, expiry: any future date, CVV: 123, OTP: 1111).
+
+
+
+## Deployment 
+ Render : https://celebal-mart.onrender.com
+
+
+## 🧪 Testing
+To test the full functionality of Celebal Mart, follow these steps:
+
+- Browse Products: Navigate to the home or all products page to view items.
+
+- Product Details: Click on any product to view its detailed info page.
+
+- Search & Filter: Use the search bar or filters to narrow down products.
+
+- Cart Functionality:
+
+    - Add multiple products to your cart.
+
+    - Update or remove items from the cart.
+
+- Checkout & Payment:
+
+    - Proceed to checkout from the cart page.
+    - Use Razorpay's test credentials to simulate payment:
+    - Card Number: 4111 1111 1111 1111
+    - Expiry: Any future date (e.g., 12/26)
+    - CVV: 123
+    - OTP: 1111
+
+- Order Confirmation:
+
+  - After successful payment, a downloadable PDF receipt is generated.
+  - A receipt is also emailed to the user via EmailJS.
+
+- Admin Testing:
+
+   - Login using provided admin credentials to access the admin dashboard.
+
+   - Test add, update, and delete product features.
+
+- 🛠 No additional testing libraries are required—just use the app’s built-in flows.
+
+## 📬 Contact
+For any questions, feedback, or collaboration inquiries, feel free to reach out:
+
+- Name: Aakanshi Malik
+
+- Email: aakanshimalik54@gmail.com
+
+- LinkedIn: www.linkedin.com/in/aakanshi-malik-996738298
