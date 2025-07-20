@@ -29,6 +29,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (  
     <MyState>
+     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/allproducts" element={<Allproducts />} />
@@ -64,6 +65,7 @@ function App() {
 
       </Routes>
       <ToastContainer/>
+     </Router>
     </MyState>
   )
 }
