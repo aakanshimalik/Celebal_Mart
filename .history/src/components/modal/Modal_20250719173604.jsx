@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
 function Modal({ name, address, pincode, phoneNumber, setName, setAddress, setPincode, setPhoneNumber, buyNow }) {
-    let [isOpen, setIsOpen] = useState(false);
+    let [isOpen, setIsOpen] = useState(false)
 
     function closeModal() {
         setIsOpen(false);

@@ -13,12 +13,10 @@ import profile from "../../assets/Aakanshi.jpg";
 import CT from "../../assets/CT.avif";
 
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
 
   const context = useContext(myContext);
   const { toggleMode, mode } = context;
@@ -27,7 +25,7 @@ function Navbar() {
 
   const logout = () => {
     localStorage.clear('user');
-    navigate(`/login`);
+    navigate(`/productinfo/${id}`);
   }
 
   const cartItems = useSelector((state) => state.cart);

@@ -27,7 +27,7 @@ function Navbar() {
 
   const logout = () => {
     localStorage.clear('user');
-    navigate(`/login`);
+    navigate(`/productinfo/${id}`);
   }
 
   const cartItems = useSelector((state) => state.cart);

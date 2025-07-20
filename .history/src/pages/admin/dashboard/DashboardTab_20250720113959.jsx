@@ -5,13 +5,11 @@ import { Link } from 'react-router-dom';
 import { MdOutlineProductionQuantityLimits } from 'react-icons/md';
 import { FaUser, FaCartPlus } from 'react-icons/fa';
 import { AiFillShopping, AiFillPlusCircle, AiFillDelete } from 'react-icons/ai';
-import { useNavigate } from 'react-router-dom';
 
 function DashboardTab() {
     const context = useContext(myContext);
     const { mode, product, edithandle, deleteProduct, order , user} = context;
     let [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate();
 
     function closeModal() {
         setIsOpen(false);
