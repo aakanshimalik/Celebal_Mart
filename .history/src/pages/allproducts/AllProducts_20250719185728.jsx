@@ -1,8 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import Filter from '../../components/filter/Filter';
 import Layout from '../../components/layout/Layout';
-import myContext from '../../context/data/myContext'
-import { useNavigate } from 'react-router-dom';
+import myContext from '../../context/data/myContext';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
 import { toast } from 'react-toastify';
@@ -10,8 +9,7 @@ import { FiGrid, FiList } from 'react-icons/fi';
 
 
 function Allproducts() {
-    const context = useContext(myContext);
-    const navigate = useNavigate();
+    const context = useContext(myContext)
     const { mode, product, searchkey, setSearchkey, filterType, setFilterType,
         filterPrice, setFilterPrice } = context;
     const dispatch = useDispatch();
@@ -65,7 +63,7 @@ function Allproducts() {
                             .map((item, index) => {
                                 const { title, price, imageUrl, id } = item;
                                 return (
-                                    <div  onClick={() => navigate(`/productinfo/${id}`)}  className={`${viewMode === 'grid' ? 'p-4 md:w-1/4' : 'w-[70%]'} drop-shadow-lg cursor-pointer`} >
+                                    <div onClick={() => window.location.href = `/productinfo/${id}`} key={index} className={`${viewMode === 'grid' ? 'p-4 md:w-1/4' : 'w-[70%]'} drop-shadow-lg cursor-pointer`} >
                                         <div className={`border-2 rounded-2xl overflow-hidden flex ${viewMode === 'list' ? 'flex-row' : 'flex-col'} transition-all duration-300`} style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                             <div className="flex justify-center cursor-pointer" >
                                                 <img className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out" src={imageUrl} alt="blog" />
